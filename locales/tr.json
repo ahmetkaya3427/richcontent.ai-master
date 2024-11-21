@@ -1,0 +1,274 @@
+{
+  "credit": "Kredi",
+  "menu": {
+    "home": "Ana Sayfa",
+    "history": "Raporlar",
+    "users": "Kullanıcılar",
+    "configs": "Konfigürasyonlar",
+    "languages": "Prompt ve Dil Yönetimi",
+    "prompts": "Prompt Yönetimi",
+    "settings": "Genel Ayarlar",
+    "userPanel": "Kullanıcı Paneli",
+    "logout": "Çıkış Yap",
+    "information": "Bilgilerim",
+    "adminPanel": "Yönetim Paneli"
+  },
+  "adminPanel": {
+    "users": {
+      "title": "Kullanıcılar",
+      "create": "Kullanıcı Oluştur",
+      "edit": "Kullanıcı Düzenle",
+      "deleteMessage": "Kullanıcı başarıyla silindi.",
+      "extra": {
+        "name": "Ad",
+        "surname": "Soyad",
+        "username": "Kullanıcı Adı",
+        "role": "Rol",
+        "email": "E-Posta",
+        "phone": "Telefon Numarası",
+        "password": "Şifre",
+        "credit": "Kredi"
+      },
+      "createError": "Kullanıcı oluşturulamadı.",
+      "createSuccess": "Kullanıcı oluşturuldu.",
+      "updateError": "Kullanıcı güncellenemedi.",
+      "updateSuccess": "Kullanıcı güncellendi."
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "saveErrorMessage": "Ayarlar kaydedilemedi.",
+      "saveMessage": "Ayarlar kaydedildi.",
+      "apiKey": "ChatGPT API Key",
+      "chatgptPrompt": "Prompt",
+      "uploadPrompt": "Resimden Açıklama Oluşturma Promptu"
+    },
+    "language": {
+      "title": "Dil Listesi",
+      "create": "Dil Ekle",
+      "edit": "Dil Düzenle",
+      "createError": "Dil oluşturulamadı.",
+      "createSuccess": "Dil oluşturuldu.",
+      "updateError": "Dil güncellenemedi.",
+      "updateSuccess": "Dil güncellendi.",
+      "deleteMessage": "Dil başarıyla silindi.",
+      "modal": {
+        "name": "Dil Adı",
+        "code": "Dil Kodu"
+      }
+    },
+    "prompts": {
+      "title": "Promptlar",
+      "create": "Prompt Oluştur",
+      "edit": "Prompt Düzenle",
+      "deleteMessage": "Prompt başarıyla silindi.",
+      "createError": "Prompt oluşturulamadı.",
+      "createSuccess": "Prompt oluşturuldu.",
+      "updateError": "Prompt güncellenemedi.",
+      "updateSuccess": "Prompt güncellendi.",
+      "keys": {
+        "title": "Prompt Anahtar Listesi",
+        "create": "Prompt Anahtarı Ekle",
+        "edit": "Prompt Anahtarı Düzenle"
+      },
+      "extra": {
+        "name": "Prompt Adı",
+        "prompt": "Prompt İçeriği",
+        "language": "Dil",
+        "status": "Durum",
+        "default": "Herkese Açık",
+        "custom": "Gizli",
+        "key": "Anahtar",
+        "keyName": "Anahtar Adı",
+        "input": "Input",
+        "editor": "Editör",
+        "outputType": "Çıktı Tipi"
+      }
+    },
+    "history": {
+      "title": "Raporlar",
+      "extra": {
+        "link": "Ürün Linki"
+      }
+    },
+    "configs": {
+      "title": "Konfigürasyonlar",
+      "create": "Konfigürasyon Oluştur",
+      "deleteMessage": "Ayar başarıyla silindi.",
+      "extensions": "Uzantı Seçin",
+      "images": "Görseller",
+      "results": "JSON Çıktı",
+      "saveConfig": "Ayarı Kaydet",
+      "testConfig": "Test Et",
+      "nameError": "Ayar adı boş olamaz.",
+      "domainError": "Domain boş olamaz.",
+      "saveError": "Ayar kaydedilemedi.",
+      "saveMessage": "Ayar kaydedildi.",
+      "scraping": "Görseller çekiliyor.",
+      "scrapeSuccess": "Görsel çekme işlemi tamamlandı.",
+      "addTitle": "Konfigürasyon Oluştur",
+      "editTitle": "Konfigürasyonu Güncelle",
+      "updateConfig": "Ayarı Güncelle",
+      "updateError": "Ayar güncellenemedi.",
+      "updateMessage": "Ayar güncellendi.",
+      "extra": {
+        "name": "Ayar Adı",
+        "domain": "Alan Adı",
+        "urlList": "URL Listesi",
+        "minWidth": "Minimum Genişlik",
+        "maxWidth": "Maksimum Genişlik",
+        "minHeight": "Minimum Yükseklik",
+        "maxHeight": "Maksimum Yükseklik",
+        "minSize": "Minimum Boyut",
+        "maxSize": "Maksimum Boyut",
+        "prompt": "Özel Prompt",
+        "includeXpath": "XPath Include",
+        "includeSelector": "Selector Include",
+        "includeUrl": "URL Include",
+        "ignoreXpath": "XPath Ignore",
+        "ignoreSelector": "Selector Ignore",
+        "ignoreUrl": "URL Ignore",
+        "descriptionXpath": "Açıklama XPath",
+        "descriptionSelector": "Açıklama Selector",
+        "codeXpath": "Ürün Kodu XPath",
+        "codeSelector": "Ürün Kodu Selector"
+      }
+    }
+  },
+  "role": {
+    "admin": "Admin",
+    "user": "Kullanıcı"
+  },
+  "table": {
+    "action": "İşlem"
+  },
+  "global": {
+    "save": "Kaydet",
+    "id": "ID",
+    "createdAt": "Oluşturulma Tarihi",
+    "failed": "Başarısız.",
+    "create": "Oluştur",
+    "update": "Güncelle",
+    "selectLabel": "Seçim yapın"
+  },
+  "auth": {
+    "accountNotExists": "Hesabın yok mu?",
+    "fillFields": "Lütfen tüm alanları doldurun.",
+    "accountExists": "Zaten hesabın var mı?",
+    "login": {
+      "title": "Giriş Yap",
+      "description": "Hesabına giriş yap ve kullanmaya başla!",
+      "success": "Giriş başarılı.",
+      "extra": {
+        "username": "Kullanıcı Adı",
+        "password": "Şifre"
+      }
+    },
+    "register": {
+      "title": "Kayıt Ol",
+      "description": "Bir hesap oluştur ve kullanmaya başla!",
+      "fields": {
+        "name": "Ad",
+        "surname": "Soyad",
+        "username": "Kullanıcı Adı",
+        "email": "E-Posta Adresi",
+        "phone": "Telefon Numarası",
+        "password": "Şifre",
+        "repeatPassword": "Şifre (Tekrar)"
+      },
+      "matchPasswordError": "Şifreler eşleşmiyor.",
+      "success": "Kayıt başarılı."
+    }
+  },
+  "userPanel": {
+    "history": {
+      "exportSelected": "Seçilenleri Dışa Aktar",
+      "exportAll": "Tümünü Dışa Aktar",
+      "title": "Raporlar",
+      "selected": "seçildi",
+      "extra": {
+        "productTitle": "Ürün Adı",
+        "preview": "Önizleme",
+        "language": "Ülke Kodu"
+      },
+      "deleteSelected": "Seçilenleri Sil"
+    },
+    "information": {
+      "extra": {
+        "name": "Ad",
+        "surname": "Soyad",
+        "email": "E-Posta",
+        "phone": "Telefon Numarası",
+        "oldPassword": "Eski Şifre",
+        "newPassword": "Yeni Şifre",
+        "repeatPassword": "Yeni Şifre (Tekrar)"
+      },
+      "changePassword": "Şifre Değiştir",
+      "information": "Kişisel Bilgiler",
+      "passwordError": "Şifreleriniz eşleşmiyor.",
+      "updateSuccess": "Bilgileriniz güncellendi."
+    },
+    "main": {
+      "createFromLink": "Ürün Linkini Girerek Oluştur",
+      "createFromImages": "Resimlerimden Seçerek Oluştur",
+      "importInformation": "A kolonunda link olması gerekiyor...",
+      "import": "İçe Aktar",
+      "createDescriptionAgain": "Tekrar Açıklama Oluştur",
+      "createDescription": "Açıklama Oluştur",
+      "copyClipboard": "Metni Kopyala",
+      "productsFetching": "Ürünleriniz yükleniyor lütfen bekleyin.",
+      "copiedClipboard": "Metin panoya kopyalandı.",
+      "descriptionCreating": "Ürün açıklaması oluşturuluyor.",
+      "allDescriptionCreating": "Tüm ürünler için açıklama oluşturuluyor.",
+      "allDescriptionCreated": "Tüm ürünler için açıklama oluşturuldu.",
+      "unsupportedFile": "Desteklenmeyen dosya türü.",
+      "scrapeSuccess": "Görsel çekme işlemi tamamlandı.",
+      "saveError": "Açıklama kaydedilemedi.",
+      "saveSuccess": "Açıklama kaydedildi.",
+      "productCode": "Ürün Kodu:",
+      "productSku": "SKU:",
+      "insufficientCredit": "Yetersiz kredi.",
+      "imageCountError": "Lütfen en az bir adet link girin.",
+      "differentPromptAgain": "Yeniden Farklı Komutla Oluştur"
+    },
+    "tabs": {
+      "createDescription": "Açıklama Oluştur (Varsayılan)",
+      "descriptionLanguage": "Açıklamanın Üretileceği Dil",
+      "createAllDescriptions": "Tüm Ürünler İçin Oluştur",
+      "selectPromptError": "Lütfen bir komut seçin.",
+      "selectLanguageError": "Lütfen bir dil seçin.",
+      "link": {
+        "title": "Linkten Açıklama Oluştur",
+        "totalCount": "Toplam Ürün Sayısı",
+        "scrapeCount": "Çekilen Görsel Sayısı",
+        "descriptionCount": "Oluşturulan Açıklama Sayısı",
+        "productList": "Ürün Listesi",
+        "promptList": "Komut Listesi",
+        "getImages": "Ürün Görsellerini Çek",
+        "productsFetching": "Ürünler yükleniyor.",
+        "scrapeSuccess": "Görsel çekme işlemi tamamlandı."
+      },
+      "image": {
+        "title": "Resimden Açıklama Oluştur",
+        "uploadMessage": "Dosya sürükle ya da butona tıkla ve yükle.",
+        "selectFile": "Dosya Seç",
+        "addProduct": "Ürünü Ekle",
+        "exportAll": "Dışa Aktar",
+        "uploadError": "Resim yüklenirken bir sorun oluştu.",
+        "productAdded": "Ürün başarıyla eklendi.",
+        "promptList": "Komut Listesi"
+      }
+    }
+  },
+  "xlsx": {
+    "productTitle": "Ürün Adı",
+    "productCode": "Ürün Kodu",
+    "extra": "Ekstra",
+    "sku": "SKU",
+    "link": "Link",
+    "productDescription": "Ürün Açıklaması",
+    "images": "Görseller",
+    "generateDescription": "Üretilen Açıklama",
+    "generateDescriptionHtml": "Üretilen Açıklama (HTML)",
+    "products": "Ürünler"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "npx prisma generate --schema=./prisma/schema.prisma",
+    "migrate": "npx prisma migrate dev --schema=./prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-vue": "^6.0.0",
+    "@formkit/auto-animate": "^0.8.2",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/i18n": "^8.3.3",
+    "@pinia/nuxt": "^0.5.2",
+    "@popperjs/core": "^2.11.8",
+    "@prisma/client": "^5.17.0",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "ckeditor5": "^42.0.0",
+    "exceljs": "^4.4.0",
+    "formidable": "^3.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mitt": "^3.0.1",
+    "nuxt": "^3.12.4",
+    "openai": "^4.53.2",
+    "pinia": "^2.2.0",
+    "prettier": "^3.3.3",
+    "prisma": "^5.17.0",
+    "sharp": "^0.33.4",
+    "swiper": "^11.1.7",
+    "uuid": "^10.0.0",
+    "vue": "latest",
+    "vue-toastification": "^2.0.0-rc.5",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/formidable": "^3.4.5",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/lodash": "^4.17.7",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "sass": "^1.77.8"
+  }
+}

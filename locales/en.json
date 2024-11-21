@@ -1,0 +1,250 @@
+{
+  "credit": "Credit",
+  "menu": {
+    "home": "Home",
+    "history": "Reports",
+    "users": "Users",
+    "configs": "Configurations",
+    "languages": "Prompt and Language",
+    "settings": "General Settings",
+    "userPanel": "User Panel",
+    "logout": "Logout",
+    "information": "My Information",
+    "adminPanel": "Admin Panel"
+  },
+  "adminPanel": {
+    "users": {
+      "title": "Users",
+      "create": "Create User",
+      "edit": "Edit User",
+      "deleteMessage": "User successfully deleted.",
+      "extra": {
+        "name": "Name",
+        "surname": "Surname",
+        "username": "Username",
+        "role": "Role",
+        "email": "Email",
+        "phone": "Phone Number",
+        "password": "Password",
+        "credit": "Credit"
+      },
+      "createError": "User could not be created.",
+      "createSuccess": "User created successfully.",
+      "updateError": "User could not be updated.",
+      "updateSuccess": "User updated successfully."
+    },
+    "settings": {
+      "title": "Settings",
+      "saveErrorMessage": "Settings could not be saved.",
+      "saveMessage": "Settings saved successfully.",
+      "apiKey": "ChatGPT API Key",
+      "chatgptPrompt": "Prompt",
+      "uploadPrompt": "Prompt for Description from Image"
+    },
+    "prompts": {
+      "title": "Prompts",
+      "create": "Create Prompt",
+      "edit": "Edit Prompt",
+      "deleteMessage": "Prompt successfully deleted.",
+      "extra": {
+        "name": "Prompt Name",
+        "prompt": "Prompt Content",
+        "language": "Language"
+      },
+      "createError": "Prompt could not be created.",
+      "createSuccess": "Prompt created successfully.",
+      "updateError": "Prompt could not be updated.",
+      "updateSuccess": "Prompt updated successfully.",
+      "languages": {
+        "create": "Add Prompt",
+        "edit": "Edit Prompt",
+        "selectLanguage": "Prompt Language",
+        "title": "Prompt Language List"
+      }
+    },
+    "history": {
+      "title": "Reports",
+      "extra": {
+        "link": "Product Link"
+      }
+    },
+    "configs": {
+      "title": "Configurations",
+      "create": "Create Configuration",
+      "deleteMessage": "Config successfully deleted.",
+      "extensions": "Select Extensions",
+      "images": "Images",
+      "results": "JSON Output",
+      "saveConfig": "Save Config",
+      "testConfig": "Test",
+      "nameError": "Config name cannot be empty.",
+      "domainError": "Domain cannot be empty.",
+      "saveError": "Config could not be saved.",
+      "saveMessage": "Config saved successfully.",
+      "scraping": "Scraping images.",
+      "scrapeSuccess": "Image scraping completed.",
+      "addTitle": "Create Configuration",
+      "editTitle": "Update Configuration",
+      "updateConfig": "Update Config",
+      "updateError": "Config could not be updated.",
+      "updateMessage": "Config updated successfully.",
+      "extra": {
+        "name": "Config Name",
+        "domain": "Domain",
+        "urlList": "URL List",
+        "minWidth": "Minimum Width",
+        "maxWidth": "Maximum Width",
+        "minHeight": "Minimum Height",
+        "maxHeight": "Maximum Height",
+        "minSize": "Minimum Size",
+        "maxSize": "Maximum Size",
+        "prompt": "Custom Prompt",
+        "includeXpath": "XPath Include",
+        "includeSelector": "Selector Include",
+        "includeUrl": "URL Include",
+        "ignoreXpath": "XPath Ignore",
+        "ignoreSelector": "Selector Ignore",
+        "ignoreUrl": "URL Ignore",
+        "descriptionXpath": "Description XPath",
+        "descriptionSelector": "Description Selector",
+        "codeSelector": "Product Code Selector",
+        "codeXpath": "Product Code XPath"
+      }
+    }
+  },
+  "role": {
+    "admin": "Admin",
+    "user": "User"
+  },
+  "table": {
+    "action": "Action"
+  },
+  "global": {
+    "save": "Save",
+    "id": "ID",
+    "createdAt": "Created At",
+    "failed": "Failed.",
+    "create": "Create",
+    "update": "Update",
+    "selectLabel": "Make your choice"
+  },
+  "auth": {
+    "accountNotExists": "Don't have an account?",
+    "fillFields": "Please fill in all fields.",
+    "accountExists": "Already have an account?",
+    "login": {
+      "title": "Login",
+      "description": "Log in to your account and start using it!",
+      "success": "Login successful.",
+      "extra": {
+        "password": "Password",
+        "username": "Username"
+      }
+    },
+    "register": {
+      "title": "Register",
+      "description": "Create an account and start using it!",
+      "fields": {
+        "name": "Name",
+        "surname": "Surname",
+        "username": "Username",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "password": "Password",
+        "repeatPassword": "Password (Repeat)"
+      },
+      "matchPasswordError": "Passwords do not match.",
+      "success": "Registration successful."
+    }
+  },
+  "userPanel": {
+    "history": {
+      "exportSelected": "Export Selected",
+      "exportAll": "Export All",
+      "title": "Reports",
+      "selected": "selected",
+      "extra": {
+        "productTitle": "Product Name",
+        "preview": "Preview",
+        "language": "Country Code"
+      },
+      "deleteSelected": "Delete Selected"
+    },
+    "information": {
+      "extra": {
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "phone": "Phone Number",
+        "oldPassword": "Old Password",
+        "newPassword": "New Password",
+        "repeatPassword": "New Password (Repeat)"
+      },
+      "changePassword": "Change Password",
+      "information": "Personal Information",
+      "passwordError": "Passwords do not match.",
+      "updateSuccess": "Your information has been updated."
+    },
+    "main": {
+      "createFromLink": "Create from Product Link",
+      "createFromImages": "Create from My Images",
+      "importInformation": "Column A must contain a link...",
+      "import": "Import",
+      "createDescriptionAgain": "Create Description Again",
+      "createDescription": "Create Description",
+      "copyClipboard": "Copy Text",
+      "productsFetching": "Your products are loading, please wait.",
+      "copiedClipboard": "Text copied to clipboard.",
+      "descriptionCreating": "Creating product description.",
+      "allDescriptionCreating": "Creating description for all products.",
+      "allDescriptionCreated": "Description created for all products.",
+      "unsupportedFile": "Unsupported file type.",
+      "scrapeSuccess": "Image scraping completed.",
+      "saveError": "Description could not be saved.",
+      "saveSuccess": "Description saved.",
+      "productCode": "Product Code:",
+      "productSku": "SKU:",
+      "insufficientCredit": "Insufficient credit."
+    },
+    "tabs": {
+      "createDescription": "Create Description (Default)",
+      "descriptionLanguage": "Language of Description",
+      "createAllDescriptions": "Create for All Products",
+      "link": {
+        "title": "Create Description from Link",
+        "totalCount": "Total Product Count",
+        "scrapeCount": "Scraped Image Count",
+        "descriptionCount": "Created Description Count",
+        "productList": "Product List",
+        "promptList": "Prompt List",
+        "getImages": "Scrape Product Images",
+        "productsFetching": "Loading products.",
+        "scrapeSuccess": "Image scraping completed."
+      },
+      "image": {
+        "title": "Create Description from Image",
+        "uploadMessage": "Drag file or click the button to upload.",
+        "selectFile": "Select File",
+        "addProduct": "Add Product",
+        "exportAll": "Export All",
+        "uploadError": "There was an issue uploading the image.",
+        "productAdded": "Product added successfully.",
+        "promptList": "Command List"
+      },
+      "selectLanguageError": "Please select a language.",
+      "selectPromptError": "Please select a command."
+    }
+  },
+  "xlsx": {
+    "productTitle": "Product Name",
+    "link": "Link",
+    "productDescription": "Product Description",
+    "images": "Images",
+    "generateDescription": "Generated Description",
+    "generateDescriptionHtml": "Generated Description (HTML)",
+    "products": "Products",
+    "extra": "Extra",
+    "productCode": "Product Code",
+    "sku": "SKU"
+  }
+}

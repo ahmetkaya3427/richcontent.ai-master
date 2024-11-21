@@ -1,0 +1,31 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Execute remote SSH commands
+        uses: appleboy/ssh-action@master
+        with:
+          host: 78.135.105.210
+          username: root
+          password: Deneme3434
+          script: |
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm use 20
+            cd /root/richcontent.ai/
+            git pull origin master
+            npm install
+            npm run build
+            cp .env .output/server/.env
+            pm2 restart richcontent-nuxt

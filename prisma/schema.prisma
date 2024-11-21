@@ -1,0 +1,142 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "binary"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum user_role {
+  user
+  admin
+}
+
+enum history_type {
+  link
+  upload
+}
+
+enum input_type {
+  input
+  editor
+}
+
+model users {
+  id         Int            @id @default(autoincrement())
+  name       String
+  surname    String
+  email      String         @unique
+  phone      String         @unique
+  username   String         @unique
+  password   String
+  credit     Int
+  role       user_role
+  tokens     tokens[]
+  created_at DateTime       @default(now())
+  histories  histories[]
+  prompts    user_prompts[]
+}
+
+model user_prompts {
+  user_id   Int
+  prompt_id Int
+  user      users   @relation(fields: [user_id], references: [id])
+  prompt    prompts @relation(fields: [prompt_id], references: [id], onDelete: Cascade)
+
+  @@id([user_id, prompt_id])
+}
+
+model prompts {
+  id          Int            @id @default(autoincrement())
+  name        String
+  default     Boolean        @default(false)
+  content     String
+  language_id Int
+  language    languages      @relation(fields: [language_id], references: [id], onDelete: Cascade)
+  prompt_keys prompt_keys[]
+  histories   histories[]
+  users       user_prompts[]
+}
+
+model prompt_keys {
+  id               Int                @id @default(autoincrement())
+  key              String
+  name             String
+  type             input_type
+  prompt_id        Int
+  prompt           prompts            @relation(fields: [prompt_id], references: [id])
+  group_id         Int?
+  prompt_key_group prompt_key_groups? @relation(fields: [group_id], references: [id])
+
+  @@unique([prompt_id, key])
+}
+
+model prompt_key_groups {
+  id          Int           @id @default(autoincrement())
+  name        String
+  prompt_keys prompt_keys[]
+}
+
+model languages {
+  id      Int       @id @default(autoincrement())
+  code    String    @unique
+  name    String
+  prompts prompts[]
+}
+
+model histories {
+  id                  Int          @id @default(autoincrement())
+  link                String       @default("")
+  images              String[]     @default([])
+  product_code        String       @default("")
+  product_title       String       @default("")
+  product_description String?      @default("")
+  product_sku         String       @default("")
+  created_at          DateTime     @default(now())
+  updated_at          DateTime     @default(now())
+  type                history_type @default(link)
+  gpt_description     Json
+  user_id             Int
+  user                users        @relation(fields: [user_id], references: [id])
+  prompt_id           Int?
+  prompt              prompts?     @relation(fields: [prompt_id], references: [id])
+}
+
+model tokens {
+  id         Int    @id @default(autoincrement())
+  token      String
+  expires_at BigInt
+  user_id    Int
+  user       users  @relation(fields: [user_id], references: [id])
+}
+
+model configs {
+  id                   Int      @id @default(autoincrement())
+  name                 String
+  domain               String
+  min_width            Int
+  max_width            Int
+  min_height           Int
+  max_height           Int
+  min_size             Int
+  max_size             Int
+  include_url          String[] @default([])
+  include_xpath        String[] @default([])
+  include_selector     String[] @default([])
+  ignore_url           String[] @default([])
+  ignore_xpath         String[] @default([])
+  ignore_selector      String[] @default([])
+  description_xpath    String[] @default([])
+  description_selector String[] @default([])
+  code_xpath           String[] @default([])
+  code_selector        String[] @default([])
+  extensions           Json     @default("{}")
+  prompt               String   @default("")
+}
+
+model settings {
+  id              Int    @id @default(autoincrement())
+  chatgpt_api_key String @default("")
+}
